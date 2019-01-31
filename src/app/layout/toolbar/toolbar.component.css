@@ -15,3 +15,15 @@
 	flex: 1;
 	font-size: 1rem;
 }
+
+.mynav{
+	cursor: pointer !important;
+}
+
+.mynav:hover{
+	background-color: cornflowerblue;
+}
+
+a.navbar-brand{
+	height: 35px !important;
+}

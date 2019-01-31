@@ -8,4 +8,8 @@ import { Router} from '@angular/router';
 })
 export class AppComponent {
   title = 'app';
+
+  isLogin(){
+    return (localStorage.getItem('isLogin')==='1') ? true : false;
+  }
 }
