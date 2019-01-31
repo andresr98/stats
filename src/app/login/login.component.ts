@@ -50,9 +50,14 @@ export class LoginComponent implements OnInit {
       'password': this.loginForm.value['iptPwd']
     };
     this._http.autenticarDocente(data).subscribe(res=>{
+      console.log('-------');
       console.log(res);
-      this.userService.login(res);
-      this.navigateAfterSuccess();
+      if(res['msg']&&res['msg']==='no se encontraron datos'){
+        alert('datos incorrectos');
+      }else{
+        this.userService.login(res);
+        this.navigateAfterSuccess();
+      }
     }, err=>{
       console.log(err);
     });

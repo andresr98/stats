@@ -12,6 +12,7 @@ export class UserService {
   login(res:any) {
     this.isAdmin=res['rol'];
     this.accessUser = res;
+    localStorage.setItem('isLogin', '1');
     localStorage.setItem("identificacion", res['identificacion']);
     localStorage.setItem("docente", res['nombre']);
     localStorage.setItem("isAdmin", res['rol']);
@@ -20,6 +21,7 @@ export class UserService {
   logout() {
     this.accessUser = null;
     this.isAdmin = false;
+    localStorage.removeItem('isLogin');
     localStorage.removeItem("token");
     localStorage.removeItem("identificacion");
     localStorage.removeItem("docente");
