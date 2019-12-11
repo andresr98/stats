@@ -45,13 +45,13 @@
     "ip-regex": "^3.0.0",
     "jquery": "^3.3.1",
     "ng-html-util": "1.0.x",
-    "ng-uikit-pro-standard": "git+https://oauth2:_hYx6cG24chkVpycDkjH@git.mdbootstrap.com/mdb/angular/ng-uikit-pro-standard.git",
+    "ng-uikit-pro-standard": "file:ng-uikit-pro-standard-7.5.0.tgz",
     "ngm-cli": "0.5.x",
     "ngx-order-pipe": "^2.0.1",
     "rxjs-compat": "^6.3.3"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^0.10.3",
+    "@angular-devkit/build-angular": "^0.11.3",
     "@angular/cli": "^7.2.2",
     "@angular/compiler": "^7.2.1",
     "@angular/compiler-cli": "^7.2.1",
